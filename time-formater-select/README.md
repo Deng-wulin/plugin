@@ -1,5 +1,5 @@
 #### How to use?
-1. npm i time-formate
+1. npm i time-formater-select
 2. Import in your project
 ```javascript
 1) import timeformater from 'time-formater-select'
