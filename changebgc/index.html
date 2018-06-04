@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>js插件 -- 可修改背景颜色</title>
+</head>
+
+<body>
+  <div id="div">怎样写一个js插件</div>
+  <script src="./modify_div_bg.js"></script>
+  <script src="./time_formater.js"></script>
+  <script>
+    var mObj = new ModifyDivBg("#div");
+    mObj.setBg("#f00");
+
+    var timer = new TimeFormater('1528094422381','YYYY-MM-DD hh:mm:ss');
+    console.log(timer)
+    timer.init();
+    console.log(timer.init())
+  </script>
+</body>
+
+</html>
