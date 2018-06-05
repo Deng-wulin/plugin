@@ -1,0 +1,14 @@
+{
+  "name": "time-countdown",
+  "version": "1.0.0",
+  "description": "a plugin which countdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pathliu",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
