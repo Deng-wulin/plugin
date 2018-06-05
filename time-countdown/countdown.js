@@ -38,19 +38,19 @@ CountDown.fn = CountDown.prototype = {
     //当天数小于等于0时，就不用显示
     if (day <= 0) {
       if (!this.toDouble(minute)) {
-        timeHtml.hour = '00';
-        timeHtml.minute = '00';
-        timeHtml.misecond = '00';
+        timeHtml.hours = '00';
+        timeHtml.minutes = '00';
+        timeHtml.seconds = '00';
       } else {
-        timeHtml.hour = this.toDouble(hour);
-        timeHtml.minute = this.toDouble(minute);
-        timeHtml.misecond = this.toDouble(second);
+        timeHtml.hours = this.toDouble(hour);
+        timeHtml.minutes = this.toDouble(minute);
+        timeHtml.seconds = this.toDouble(second);
       }
     } else {
       hour = day * 24 + hour;
-      timeHtml.hour = this.toDouble(hour);
-      timeHtml.minute = this.toDouble(minute);
-      timeHtml.misecond = this.toDouble(second);
+      timeHtml.hours = this.toDouble(hour);
+      timeHtml.minutes = this.toDouble(minute);
+      timeHtml.seconds = this.toDouble(second);
     }
     return timeHtml;
   },
